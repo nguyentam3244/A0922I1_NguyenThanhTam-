@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = prompt("Nhập tài khoản:");
+    if( a === 'Admin') {
+        let b = prompt("Nhập mật khẩu");
+        if(b === 'TheMasteECMAScript!r') {
+            document.write("Welcome");
+        } else if(b === null) {
+            document.write("Canceled");
+        } else {
+            document.write("wrong password");
+        }
+    } else if(a === null) {
+        document.write("cancel");
+    } else {
+        document.write("I dont know you");
+    }
+</script>
+</html>
