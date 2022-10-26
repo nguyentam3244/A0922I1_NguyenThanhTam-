@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let number = +prompt("Nhập số");
+    let count = 0;
+    let N = 2;
+    while (count < number) {
+        if (N < 2) {
+            document.write(N + "K phải là số nt");
+        }
+        let count1 = 0;
+        for (let i = 2; i <= Math.sqrt(N); i++) {
+            if (N % i === 0) {
+                count1++;
+            }
+        }
+        if (count1 === 0) {
+            document.write(N + "" + '<br>');
+            count++;
+        }
+        N++;
+    }
+
+</script>
+</html>
