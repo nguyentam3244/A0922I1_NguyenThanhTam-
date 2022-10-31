@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let r = +prompt("Nhập số hàng");5
+    let c = +prompt("Nhập số cột");5
+    for (let i = 1 ; i <= r ; i++) {
+        for (let j = 1; j <= c ; j++) {
+            if(j <= i){
+                document.write("&nbsp&nbsp");
+            } else if(j > i){
+                document.write("*");
+            }
+        }
+        document.write("<br>");
+    }
+</script>
+</html>

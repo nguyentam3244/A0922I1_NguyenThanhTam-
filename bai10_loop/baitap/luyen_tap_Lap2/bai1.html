@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let f1 = 1;
+    let f2 = 1;
+    let f3 ;
+    let s = "";
+    for (let i = 1; i <= 20; i++) {
+        f3=f1+f2;
+        f1=f2;
+        f2=f3;
+        s = s + f3 + " ";
+    }
+    document.write("Dãy fibonnaci: " + s );
+</script>
+</html>
